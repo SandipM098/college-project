@@ -6,7 +6,7 @@ const Navbar = () => {
       <nav className="flex justify-between">
         <div className="mx-2">
           {/*Logo Name*/}
-          <SiSpyderide size={45} className="mx-5 text-rose-950" />
+          <a href="/"><SiSpyderide size={45} className="mx-5 text-rose-950" /></a>
           <a href="/" className="font-bold  text-1.8xl text-rose-950">
             RideOrDrive
           </a>
