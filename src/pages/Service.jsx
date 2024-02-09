@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
+import Navbar from '../components/Navbar';
 
 export default function Service() {
   return (
-    <div>
-      
-    </div>
+    <>
+    <Navbar/>
+    </>
   )
 }

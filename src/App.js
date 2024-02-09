@@ -1,10 +1,25 @@
-import logo from './logo.svg';
+
 import Navbar from './components/Navbar';
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import Car from './pages/Car';
+import Bikes from './pages/Bikes';
+import Home from './pages/home';
+import Service from './pages/Service';
+import About from './pages/About';
+
 
 function App() {
   return (
     <div className="App">
-      <Navbar/>
+      <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/About' element={<About/>}/>
+        <Route path='/Car' element={<Car/>}/>
+        <Route path='/Bike' element={<Bikes/>}/>
+        <Route path='/Service' element={<Service/>}/>   
+      </Routes>
+      </BrowserRouter>
     </div>
   );
 }

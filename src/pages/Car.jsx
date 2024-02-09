@@ -1,9 +1,10 @@
 import React from 'react'
+import Navbar from '../components/Navbar'
 
 export default function Car() {
   return (
-    <div>
-      
-    </div>
+    <>
+    <Navbar/>
+    </>
   )
 }
