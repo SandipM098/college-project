@@ -10,12 +10,12 @@ const Navbar = () => {
     setMenu(!menu);
   };
   return (
-    <header className="fixed w-full z-10 bg-black text-white py-2">
+    <header className="fixed w-full z-10 bg-zinc-900 text-white py-2">
       <nav className="flex justify-between">
         <div className="mx-2">
           {/*Logo Name*/}
           <Link to="/">
-            <SiSpyderide size={45} className="mx-5 text-blue-600" />
+            <SiSpyderide size={40} className="mx-5 text-blue-600" />
           </Link>
           <Link to="/" className="font-bold  text-1.8xl text-blue-600">
             RideOrDrive
