@@ -2,48 +2,49 @@ import React from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from 'react-slick';
+import FeatureCar from "./FeatureCar.jsx";
 
-export default function Featured() {
-  const Featured = () => {
+
+export default function Featured(){
     const carsData = [
       {
         id: 0,
-        img: "/src/assets/image/car1.png",
+        image: "src/assets/image/car1.png",
         name: "Toyota Car",
         price: "30,000",
       },
       {
         id: 1,
-        img: "/src/assets/image/car1.png",
+        image: "src/assets/image/car1.png",
         name: "Toyota Car",
         price: "30,000",
       },
       {
         id: 2,
-        img: "/src/assets/image/car1.png",
+        image: "src/assets/image/car1.png",
         name: "Toyota Car",
         price: "30,000",
       },
       {
         id: 3,
-        img: "/src/assets/image/car1.png",
+        image: "src/assets/image/car1.png",
         name: "Toyota Car",
         price: "30,000",
       },
       {
         id: 4,
-        img: "/src/assets/image/car1.png",
+        image: "src/assets/image/car1.png", 
         name: "Toyota Car",
         price: "30,000",
       },
       {
         id: 5,
-        img: "/src/assets/image/car1.png",
+        image: "src/assets/image/car1.png" ,
         name: "Toyota Car",
         price: "30,000",
-      },
-    ];
-  };
+      }
+    ]
+  ;
 
   const settings = {
     dots: false,
@@ -90,9 +91,24 @@ export default function Featured() {
         Feature <span className="text-blue-600">Cars</span>
       </h1>
 
-      <p>Lorem ipsum dolor sit amet consectetur.</p>
+      <p className="text-center">Lorem ipsum dolor sit amet consectetur.</p>
 
-      <div></div>
+      <div>
+        <Slider {...settings} >
+          { carsData.map((item) =>(
+            <FeatureCar
+            key={item.id}
+            img={item.image}
+            name={item.name}
+            price={item.price}
+            />
+
+          ))}
+        </Slider>
+      </div>
     </div>
   );
 }
+
+
+
