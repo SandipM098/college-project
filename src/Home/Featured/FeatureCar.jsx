@@ -1,10 +1,10 @@
 import React from 'react'
 
-export default function FeatureCar({id, image, name, price}) {
+const FeatureCar = ( {id, url, name, price } ) => { 
   return (
     <div>
-      <div>
-        <img src={image} alt=''/>
+      <div >
+        <img key={id} src={url} alt=' '/>
       </div>
       <div>
         <h1>{name}</h1>
@@ -15,3 +15,5 @@ export default function FeatureCar({id, image, name, price}) {
     </div>
   )
 }
+
+export default FeatureCar;

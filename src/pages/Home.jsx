@@ -1,7 +1,8 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
 import Hero from '../Home/Hero/Hero'
-import Feature from '../Home/Featured/Featured.jsx'
+import Featured from '../Home/Featured/Featured.jsx'
+import WhyUs from '../Home/WhyUs/WhyUs.jsx'
 
 
 export default function home(){
@@ -9,8 +10,8 @@ export default function home(){
     <>
     <Navbar/>
     <Hero/>
-    <Feature/>
-
+    <Featured/>
+    <WhyUs/>
     
     </>
     

@@ -9,37 +9,37 @@ export default function Featured(){
     const carsData = [
       {
         id: 0,
-        image: "src/assets/image/car1.png",
+        url: '/src/assets/image/carOne.jpg',
         name: "Toyota Car",
         price: "30,000",
       },
       {
         id: 1,
-        image: "src/assets/image/car1.png",
+        url: '/src/assets/image/car2.png',
         name: "Toyota Car",
         price: "30,000",
       },
       {
         id: 2,
-        image: "src/assets/image/car1.png",
+        url: '/src/assets/image/carOne.png',
         name: "Toyota Car",
         price: "30,000",
       },
       {
         id: 3,
-        image: "src/assets/image/car1.png",
+        url: '/src/assets/image/carOne.png',
         name: "Toyota Car",
         price: "30,000",
       },
       {
         id: 4,
-        image: "src/assets/image/car1.png", 
+        url: '/src/assets/image/carOne.png', 
         name: "Toyota Car",
         price: "30,000",
       },
       {
         id: 5,
-        image: "src/assets/image/car1.png" ,
+        url: '/src/assets/image/carOne.png',
         name: "Toyota Car",
         price: "30,000",
       }
@@ -98,7 +98,7 @@ export default function Featured(){
           { carsData.map((item) =>(
             <FeatureCar
             key={item.id}
-            img={item.image}
+            url={item.url}
             name={item.name}
             price={item.price}
             />
