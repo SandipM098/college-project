@@ -1,6 +1,7 @@
 import React from "react";
 import { SiWebmoney } from "react-icons/si";
 import { FaUsers, FaShippingFast } from "react-icons/fa";
+import WhyUsCard from "./WhyUsCard";
 export default function WhyUs() {
   const icon1 = <SiWebmoney className="text-green-500 mx-auto" size={48} />;
   const icon2 = <FaUsers className="text-green-500 mx-auto" size={48}/>;
@@ -18,9 +19,9 @@ export default function WhyUs() {
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-10 gap-5">
-        <WhyUs icon = {icon1} title="Financing Options"/>
-        <WhyUs icon = {icon2} title="Satisfied Customers"/>
-        <WhyUs icon = {icon3} title="Fast & Easy Booking"/>
+        <WhyUsCard icon = {icon1} title="Financing Options"/>
+        <WhyUsCard icon = {icon2} title="Satisfied Customers"/>
+        <WhyUsCard icon = {icon3} title="Fast & Easy Booking"/>
       </div>
     </div>
   );
