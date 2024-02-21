@@ -4,7 +4,7 @@ const FeatureCar = ( {id, url, name, price } ) => {
   return (
     <div>
       <div >
-        <img key={id} src={url} alt=' '/>
+        <img key={id} src={url} alt="img"/>
       </div>
       <div>
         <h1>{name}</h1>

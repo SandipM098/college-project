@@ -4,42 +4,41 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from 'react-slick';
 import FeatureCar from "./FeatureCar.jsx";
 
-
 export default function Featured(){
     const carsData = [
       {
         id: 0,
-        url: '/src/assets/image/carOne.jpg',
+        url: "src/assets/image/carOne.png",
         name: "Toyota Car",
         price: "30,000",
       },
       {
         id: 1,
-        url: '/src/assets/image/car2.png',
+        url: "/src/assets/image/carOne.png",
         name: "Toyota Car",
         price: "30,000",
       },
       {
         id: 2,
-        url: '/src/assets/image/carOne.png',
+        url: "/src/assets/image/carOne.png",
         name: "Toyota Car",
         price: "30,000",
       },
       {
         id: 3,
-        url: '/src/assets/image/carOne.png',
+        url: "/src/assets/image/carOne.png",
         name: "Toyota Car",
         price: "30,000",
       },
       {
         id: 4,
-        url: '/src/assets/image/carOne.png', 
+        url: "/src/assets/image/carOne.png", 
         name: "Toyota Car",
         price: "30,000",
       },
       {
         id: 5,
-        url: '/src/assets/image/carOne.png',
+        url: "/src/assets/image/carOne.png",
         name: "Toyota Car",
         price: "30,000",
       }
@@ -95,14 +94,13 @@ export default function Featured(){
 
       <div>
         <Slider {...settings} >
-          { carsData.map((item) =>(
+          {carsData.map((item) =>(
             <FeatureCar
             key={item.id}
-            url={item.url}
             name={item.name}
+            url={item.url}
             price={item.price}
             />
-
           ))}
         </Slider>
       </div>

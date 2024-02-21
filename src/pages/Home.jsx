@@ -3,6 +3,8 @@ import Navbar from '../components/Navbar'
 import Hero from '../Home/Hero/Hero'
 import Featured from '../Home/Featured/Featured.jsx'
 import WhyUs from '../Home/WhyUs/WhyUs.jsx'
+import OurMission from '../Home/Mission/OurMission.jsx'
+import CarNews from '../Home/News/CarNews.jsx'
 
 
 export default function Home(){
@@ -12,7 +14,8 @@ export default function Home(){
     <Hero/>
     <Featured/>
     <WhyUs/>
-    
+    <OurMission/>
+    <CarNews/>
     </>
     
   )
