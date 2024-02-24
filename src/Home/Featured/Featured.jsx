@@ -8,37 +8,37 @@ export default function Featured(){
     const carsData = [
       {
         id: 0,
-        url: "src/assets/image/carOne.png",
+        img: "/src/assets/image/carOne.jpg",
         name: "Toyota Car",
         price: "30,000",
       },
       {
         id: 1,
-        url: "/src/assets/image/carOne.png",
+        img: "/src/assets/image/carOne.jpg",
         name: "Toyota Car",
         price: "30,000",
       },
       {
         id: 2,
-        url: "/src/assets/image/carOne.png",
+        img: "/src/assets/image/carOne.jpg",
         name: "Toyota Car",
         price: "30,000",
       },
       {
         id: 3,
-        url: "/src/assets/image/carOne.png",
+        img: "/src/assets/image/carOne.jpg",
         name: "Toyota Car",
         price: "30,000",
       },
       {
         id: 4,
-        url: "/src/assets/image/carOne.png", 
+        img: "/src/assets/image/carOne.jpg", 
         name: "Toyota Car",
         price: "30,000",
       },
       {
         id: 5,
-        url: "/src/assets/image/carOne.png",
+        img: "/src/assets/image/carOne.jpg",
         name: "Toyota Car",
         price: "30,000",
       }
@@ -98,7 +98,7 @@ export default function Featured(){
             <FeatureCar
             key={item.id}
             name={item.name}
-            url={item.url}
+            url={item.img}
             price={item.price}
             />
           ))}

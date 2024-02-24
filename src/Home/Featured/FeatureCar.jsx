@@ -1,10 +1,10 @@
 import React from 'react'
 
-const FeatureCar = ( {id, url, name, price } ) => { 
+const FeatureCar = ( {id, img, name, price } ) => { 
   return (
     <div>
       <div >
-        <img key={id} src={url} alt="img"/>
+        <img key={id} src={img} alt="img"/>
       </div>
       <div>
         <h1>{name}</h1>

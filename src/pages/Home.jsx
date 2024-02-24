@@ -5,6 +5,7 @@ import Featured from '../Home/Featured/Featured.jsx'
 import WhyUs from '../Home/WhyUs/WhyUs.jsx'
 import OurMission from '../Home/Mission/OurMission.jsx'
 import CarNews from '../Home/News/CarNews.jsx'
+import Foot from '../components/Foot.jsx'
 
 
 export default function Home(){
@@ -16,6 +17,9 @@ export default function Home(){
     <WhyUs/>
     <OurMission/>
     <CarNews/>
+    <Foot/>
+    
+    
     </>
     
   )

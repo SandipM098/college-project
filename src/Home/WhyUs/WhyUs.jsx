@@ -8,7 +8,8 @@ export default function WhyUs() {
   const icon3 = <FaShippingFast className="text-green-500 mx-auto" size={48}/>;
 
   return (
-    <div className="flex flex-col justify-center container md:mt-16 py-10">
+    
+    <div className="flex flex-col justify-center md:mt-16 py-10">
       <h1 className="font-bold text-4xl text-center">
         Why choose <span className="text-blue-900">RideOrDrive</span> ?
       </h1>
