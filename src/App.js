@@ -1,8 +1,6 @@
 
-import Navbar from './components/Navbar';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import Car from './pages/Car';
-import Bikes from './pages/Bikes';
 import Home from './pages/Home';
 import Service from './pages/Service';
 import About from './pages/About';
@@ -16,7 +14,7 @@ function App() {
         <Route path='/' element={<Home/>}/>
         <Route path='/About' element={<About/>}/>
         <Route path='/Car' element={<Car/>}/>
-        <Route path='/Bike' element={<Bikes/>}/>
+        {/* <Route path='/Bike' element={<Bikes/>}/> */}
         <Route path='/Service' element={<Service/>}/>   
       </Routes>
       </BrowserRouter>
