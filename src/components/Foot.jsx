@@ -21,13 +21,13 @@ const Foot = () => {
           <div className="flex flex-col gap-2 font-medium">
             <Link
               to="/About"
-              className="hover:text-blue-900 transition duration-200 ease-linear"
+              className="hover:translate-x-3 transition duration-200 ease-linear"
             >
               About Us
             </Link>
             <Link
               to="/Car"
-              className="hover:text-blue-900 transition duration-200 ease-linear"
+              className="hover:translate-x-3 transition duration-200 ease-linear"
             >
               Our Cars
             </Link>
@@ -39,7 +39,7 @@ const Foot = () => {
               </Link> */}
             <Link
               to="/Service"
-              className="hover:text-blue-900 transition duration-200 ease-linear"
+              className="hover:translate-x-3 transition duration-200 ease-linear"
             >
               Services
             </Link>
@@ -50,25 +50,25 @@ const Foot = () => {
           <div className="flex flex-col gap-2 font-medium">
             <Link
               to="/"
-              className="hover:text-blue-900 transition duration-200 ease-linear"
+              className="hover:translate-x-3 transition duration-200 ease-linear"
             >
               Toyota Camry
             </Link>
             <Link
               to="/"
-              className="hover:text-blue-900 transition duration-200 ease-linear"
+              className="hover:translate-x-3 transition duration-200 ease-linear"
             >
               Chevrolet Corvette
             </Link>
             <Link
               to="/"
-              className="hover:text-blue-900 transition duration-200 ease-linear"
+              className="hover:translate-x-3 transition duration-200 ease-linear"
             >
               Volkswagen Golf
             </Link>
             <Link
               to="/"
-              className="hover:text-blue-900 transition duration-200 ease-linear"
+              className="hover:translate-x-3 transition duration-200 ease-linear"
             >
               Nissan Rogue
             </Link>
@@ -79,37 +79,36 @@ const Foot = () => {
           <div className="flex flex-col gap-2 font-medium">
             <Link
               to="/"
-              className="hover:text-blue-900 transition duration-200 ease-linear"
+              className="hover:translate-x-3 transition duration-200 ease-linear"
             >
               User-friendly
             </Link>
             <Link
               to="/"
-              className="hover:text-blue-900 transition duration-200 ease-linear"
+              className="hover:translate-x-3 transition duration-200 ease-linear"
             >
               Search and Filters
             </Link>
             <Link
               to="/"
-              className="hover:text-blue-900 transition duration-200 ease-linear"
+              className="hover:translate-x-3 transition duration-200 ease-linear"
             >
               Secure Payment
             </Link>
             <Link
               to="/"
-              className="hover:text-blue-900 transition duration-200 ease-linear"
+              className="hover:translate-x-3 transition duration-200 ease-linear"
             >
               Geolocation Services
             </Link>
           </div>
         </div>
       </div>
-      |
       <div>
-        <p>
+        <p className="text-center py-4">
           @copyright developed by
-          <span>TrickSter</span>
-          All rights reserved
+          <span className="text-blue-900 font-semibold mx-2">TrickSter</span>
+          | All rights reserved
         </p>
       </div>
     </footer>

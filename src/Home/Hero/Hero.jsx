@@ -20,7 +20,7 @@ export default function Hero() {
           <div className="flex gap-8">
             <button className="bg-blue-600 py-1 px-4 rounded-md hover:scale-95 transition duration-150 ease-linear">Explore More</button>
             <button className="border-2 border-neutral-600 py-1 px-4 rounded-md hover:bg-blue-600 transition duration-200 ease-linear">See Cars</button>
-            <button className="border-2 border-neutral-600 py-1 px-4 rounded-md hover:bg-blue-600 transition duration-200 ease-linear">See Bikes</button>
+            {/* <button className="border-2 border-neutral-600 py-1 px-4 rounded-md hover:bg-blue-600 transition duration-200 ease-linear">See Bikes</button> */}
           </div>
         </div>
         <div className="w-full md:w-2/4 mt-4">
