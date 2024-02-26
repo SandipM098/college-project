@@ -6,6 +6,7 @@ import Service from './pages/Service';
 import About from './pages/About';
 
 
+
 function App() {
   return (
     <div className="App">
@@ -15,7 +16,7 @@ function App() {
         <Route path='/About' element={<About/>}/>
         <Route path='/Car' element={<Car/>}/>
         {/* <Route path='/Bike' element={<Bikes/>}/> */}
-        <Route path='/Service' element={<Service/>}/>   
+        <Route path='/Service' element={<Service/>}/>
       </Routes>
       </BrowserRouter>
     </div>

@@ -3,10 +3,10 @@ import img from "../../assets/image/hero.jpg";
 
 export default function Hero() {
   return (
-    <div className="bg-black text-white ">
-      <div className="h-screen container flex flex-col justify-center  md:flex-row items-center">
+    <div className="bg-black text-white">
+      <div className="h-screen flex flex-col justify-center  md:flex-row items-center">
         <div className="w-full md:w-2/4 space-y-5 mt-10">
-          <h2 className="text-4xl lg:text-6xl font-bold leading-tight">
+          <h2 className="text-6xl lg:text-6xl font-bold leading-tight">
             Find Your Perfect Travel Assists
           </h2>
           <p className="text-lg lg:text-2xl font-medium">
@@ -23,7 +23,7 @@ export default function Hero() {
             {/* <button className="border-2 border-neutral-600 py-1 px-4 rounded-md hover:bg-blue-600 transition duration-200 ease-linear">See Bikes</button> */}
           </div>
         </div>
-        <div className="w-full md:w-2/4 mt-4">
+        <div className="w-full md:w-2/4 mt-4 sm:w-auto">
           {/* image section */}
           <img src={img} alt="img" />
         </div>
@@ -31,3 +31,4 @@ export default function Hero() {
     </div>
   );
 }
+

@@ -97,6 +97,7 @@ const Navbar = () => {
         </Link>
 
       <div>
+
       <button className="hover:text-blue-900 border-2 border-neutral-600 text-cyan-600 rounded-md py-1 px-4">
           Sign In
         </button>

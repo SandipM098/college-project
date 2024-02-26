@@ -8,39 +8,39 @@ export default function Featured(){
     const carsData = [
       {
         id: 0,
-        img: "/src/assets/image/carOne.jpg",
-        name: "Toyota Car",
-        price: "30,000",
+        img: "/src/assets/image/car1.jpg",
+        name: "Toyota Agya",
+        price: "25,000",
       },
       {
         id: 1,
-        img: "/src/assets/image/carOne.jpg",
-        name: "Toyota Car",
+        img: "/src/assets/image/car2.jpg",
+        name: "Suzuki Swift ZXI",
         price: "30,000",
       },
       {
         id: 2,
-        img: "/src/assets/image/carOne.jpg",
-        name: "Toyota Car",
-        price: "30,000",
+        img: "/src/assets/image/car3.jpg",
+        name: "BMW X5",
+        price: "33,000",
       },
       {
         id: 3,
-        img: "/src/assets/image/carOne.jpg",
-        name: "Toyota Car",
-        price: "30,000",
+        img: "/src/assets/image/car4.jpg",
+        name: "Mercedez CLS",
+        price: "35,000",
       },
       {
         id: 4,
-        img: "/src/assets/image/carOne.jpg", 
-        name: "Toyota Car",
-        price: "30,000",
+        img: "/src/assets/image/car5.jpg", 
+        name: "Ford Mustang Shelby GT 500",
+        price: "38,000",
       },
       {
         id: 5,
-        img: "/src/assets/image/carOne.jpg",
-        name: "Toyota Car",
-        price: "30,000",
+        img: "/src/assets/image/car6.jpg",
+        name: "Audi R8",
+        price: "40,000",
       }
     ]
   ;
@@ -85,20 +85,20 @@ export default function Featured(){
     ]
   };
   return (
-    <div>
+    <div className="mt-14">
       <h1 className="font-bold text-4xl text-center">
         Feature <span className="text-blue-600">Cars</span>
       </h1>
 
       <p className="text-center">Lorem ipsum dolor sit amet consectetur.</p>
 
-      <div>
+      <div className="mt-8">
         <Slider {...settings} >
           {carsData.map((item) =>(
             <FeatureCar
             key={item.id}
             name={item.name}
-            url={item.img}
+            img={item.img}
             price={item.price}
             />
           ))}
