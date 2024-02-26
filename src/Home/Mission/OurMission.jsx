@@ -9,7 +9,6 @@ function OurMission() {
           Our <span className="text-blue-900">Mission</span>
         </h1>
       </div>
-
     <div className="flex flex-col justify-center md:flex-row items-center gap-5 mt-8 mx-5">
 
       <div className="w-full md:w-2/4">
@@ -20,7 +19,6 @@ function OurMission() {
       <div className="w-full md:w-2/4 space-y-4">
         {/* content section */}
         <h1 className="font-bold text-blue-900 text-lg lg:text-3xl">To create a community where every journey is extraoridinary.</h1> 
-
         <h2 className="font-semibold text-lg lg:text-2xl ">
           Empower individuals to achieve sustainable mobility solutions and
           inspire a positive impact on the environment.
