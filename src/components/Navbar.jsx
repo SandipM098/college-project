@@ -40,12 +40,6 @@ const Navbar = () => {
           >
             Our Cars
           </Link>
-          {/* <Link
-            to="/Bike"
-            className="hover:text-blue-900 transition duration-200 ease-linear"
-          >
-            Our Bikes
-          </Link> */}
           <Link
             to="/Service"
             className="hover:text-blue-900 transition duration-200 ease-linear"
