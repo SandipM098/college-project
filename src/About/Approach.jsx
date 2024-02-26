@@ -7,8 +7,8 @@ export default function Approach() {
       {/* content section */}
       <div className="w-full md:w-2/4 space-y-4 ">
         {/* content section */}
-        <h1 className="text-3xl font-bold">Our Approach</h1>
-        <h2 className=" font-semibold text-lg lg:text-2xl">
+        <h1 className="text-4xl font-bold">Our Approach</h1>
+        <h2 className=" font-semibold text-lg lg:text-2.5xl">
           Empower individuals to achieve sustainable mobility solutions and
           inspire a positive impact on the environment.
         </h2>
