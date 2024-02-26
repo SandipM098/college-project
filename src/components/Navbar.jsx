@@ -46,10 +46,11 @@ const Navbar = () => {
           >
             Services
           </Link>
-
+          <Link to='/SignIn'>
           <button className="hidden lg:flex border-2 border-neutral-600 text-lg rounded-lg bg-gray-600 text-cyan-500 px-2 transition duration-200 hover:bg-blue-50 ease-linear">
             Sign In
           </button>
+          </Link>
         </div>
         <div className="md:hidden flex items-center">
           {menu ? (
@@ -97,10 +98,12 @@ const Navbar = () => {
         </Link>
 
       <div>
+      <Link to='/SignIN'>
 
       <button className="hover:text-blue-900 border-2 border-neutral-600 text-cyan-600 rounded-md py-1 px-4">
           Sign In
         </button>
+      </Link>
       </div>
       </div>
     </header>
