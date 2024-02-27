@@ -1,46 +1,53 @@
 import React from 'react'
 import CarsCard from './CarsCard';
+import img1 from '../assets/image/car1.jpg'
+import img2 from '../assets/image/car2.jpg'
+import img3 from '../assets/image/car3.jpg'
+import img4 from '../assets/image/car4.jpg'
+import img5 from '../assets/image/car5.jpg'
+import img6 from '../assets/image/car6.jpg'
 
 const OurCars = () => {
   const carsData = [
     {
       id: 0,
-      img: "/src/assets/image/car1.jpg",
+      img : img1,
       name: "Toyota Agya",
       price: "25,000",
     },
     {
       id: 1,
-      img: "/src/assets/image/car2.jpg",
+      img: img2,
       name: "Suzuki Swift ZXI",
       price: "30,000",
     },
     {
       id: 2,
-      img: "/src/assets/image/car3.jpg",
+      img: img3,
       name: "BMW X5",
       price: "33,000",
     },
     {
       id: 3,
-      img: "/src/assets/image/car4.jpg",
+      img: img4,
       name: "Mercedez CLS",
       price: "35,000",
     },
     {
       id: 4,
-      img: "/src/assets/image/car5.jpg", 
+      img: img5, 
       name: "Ford Mustang Shelby GT 500",
       price: "38,000",
     },
     {
       id: 5,
-      img: "/src/assets/image/car6.jpg",
+      img: img6,
       name: "Audi R8",
       price: "40,000",
     }
   ]
 ;
+  
   return (
     <div className='pt-24'>
       <div>

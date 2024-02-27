@@ -1,10 +1,11 @@
 import React from 'react'
 
-const FeatureCar = ( {id, img, name, price } ) => { 
+const FeatureCar = ( {id, name,img, price } ) => { 
+  console.log('Image URL:', img);
   return (
     <div className='border-2 border-zinc-900 bg-slate-100 text-black rounded-xl mb-2 cursor-pointer hover:scale-95 hover:bg-slate-200 transition duration-200 ease-linear'>
       <div >
-        <img key={id} src={img} alt="img" className='rounded-t-xl w-full'/>
+        <img key={id} src={img} alt="img" className='rounded-t-xl h-full w-full'/>
       </div>
       <div className='flex flex-col justify-center items-center'>
         <h1 className='font-semibold text-xl text-blue-900 pt-2'>{name}</h1>

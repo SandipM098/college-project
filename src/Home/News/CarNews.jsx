@@ -1,38 +1,44 @@
 import React from 'react'
 import Slider from 'react-slick';
 import CarNewsCard from './CarNewsCard';
+import pic1 from '../../assets/image/img1.jpg'
+import pic2 from '../../assets/image/img2.webp'
+import pic3 from '../../assets/image/img3.avif'
+import pic4 from '../../assets/image/img4.jpg'
+import pic5 from '../../assets/image/img5.png'
+import pic6 from '../../assets/image/img6.avif'
 
 const CarNews = () => {
 
   const newsData = [
     {
       id : 0 , 
-      img : "src/assets/image/img1.jpg",
+      img : pic1,
       desc : "Toyota touts internal combustion engine potential, even in Ev age"
     } , 
     {
       id : 1, 
-      img : "src/assets/image/img2.webp",
+      img : pic2,
       desc : "BMW Group India clocks best-ever annual sales in 2023, leads luxury electric car segment",
     }, 
     {
       id : 2, 
-      img : "src/assets/image/img3.avif",
+      img : pic3,
       desc : "MG Astor 2024 launched in India, price starts at Rs 9.98 lakh"
     }, 
     {
       id : 3 , 
-      img : "src/assets/image/img4.jpg",
+      img : pic4,
       desc : "Kia Sonet facelift launched in India at Rs 7.99 lakh, Tate Nexon & Maruti Suzuki Brezza rival"
     },
     {
       id : 4 , 
-      img : "src/assets/image/img5.png",
+      img : pic5,
       desc : "First Shift: New-vehicle inventory reaches 3-year high"
     }, 
     {
       id : 5 , 
-      img : "src/assets/image/img6.avif",
+      img : pic6,
       desc : "JLR India sales rise 74% in Q3 on robust demand for Range Rover, Range Rover Velar, Defender"
     }
   ];
@@ -79,7 +85,7 @@ const CarNews = () => {
       <h1 className='font-bold text-4xl text-center'>Car <span className='text-blue-900 '>News & Advices</span></h1>
       <p className='text-center'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam, est.</p>
 
-      <div className='mt-8'>
+      <div className='mt-8 gap-5'>
         <Slider {...settings}>
             {newsData.map((item) => (
               <CarNewsCard key={item.id} img={item.img} desc={item.desc}/>
