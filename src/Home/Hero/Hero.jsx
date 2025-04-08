@@ -13,13 +13,17 @@ export default function Hero() {
             Over 100+ vehicles available
           </p>
           <p className="text-lg lg:text-base">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex fugiat
-            qui mollitia, dolores rem temporibus eveniet quasi omnis dicta
-            suscipit?
+            Browse a wide selection of top-rated vehicles suited for every
+            journey. From luxury rides to budget-friendly options — we’ve got
+            your next adventure covered.
           </p>
           <div className="flex gap-8">
-            <button className="bg-blue-600 py-1 px-4 rounded-md hover:scale-95 transition duration-150 ease-linear">Explore More</button>
-            <button className="border-2 border-neutral-600 py-1 px-4 rounded-md hover:bg-blue-600 transition duration-200 ease-linear">See Cars</button>
+            <button className="bg-blue-600 py-1 px-4 rounded-md hover:scale-95 transition duration-150 ease-linear">
+              Explore More
+            </button>
+            <button className="border-2 border-neutral-600 py-1 px-4 rounded-md hover:bg-blue-600 transition duration-200 ease-linear">
+              See Cars
+            </button>
             {/* <button className="border-2 border-neutral-600 py-1 px-4 rounded-md hover:bg-blue-600 transition duration-200 ease-linear">See Bikes</button> */}
           </div>
         </div>
