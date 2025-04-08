@@ -2,109 +2,105 @@ import React, { useState } from "react";
 import { SiSpyderide } from "react-icons/si";
 import { AiOutlineClose } from "react-icons/ai";
 import { RiMenuUnfoldFill } from "react-icons/ri";
-import {Link} from 'react-router-dom';
+import { Link } from "react-router-dom";
+
 const Navbar = () => {
   const [menu, setMenu] = useState(false);
 
   const handleChange = () => {
     setMenu(!menu);
   };
+
   return (
-    <header className="fixed w-full z-10 bg-zinc-900 text-white py-2">
-      <nav className="flex justify-between">
-        <div className="mx-2">
-          {/*Logo Name*/}
-          <Link to="/">
-            <SiSpyderide size={40} className="mx-5 text-blue-600" />
-          </Link>
-          <Link to="/" className="font-bold  text-1.8xl text-blue-600">
-            RideOrDrive
-          </Link>
-        </div>
-        <div className="hidden md:flex items-center gap-4 font-medium text-xl mx-1">
-          <Link
-            to="/"
-            className="hover:text-blue-900 transition duration-200 ease-linear"
-          >
-            Home
-          </Link>
-          <Link
-            to="/About"
-            className="hover:text-blue-900 transition duration-200 ease-linear"
-          >
-            About Us
-          </Link>
-          <Link
-            to="/Car"
-            className="hover:text-blue-900 transition duration-200 ease-linear"
-          >
-            Our Cars
-          </Link>
-          <Link
-            to="/Service"
-            className="hover:text-blue-900 transition duration-200 ease-linear"
-          >
-            Services
-          </Link>
-          <Link to='/SignIn'>
-          <button className="hidden lg:flex border-2 border-neutral-600 text-lg rounded-lg bg-gray-600 text-cyan-500 px-2 transition duration-200 hover:bg-blue-50 ease-linear">
-            Sign In
-          </button>
+    <header className="fixed w-full z-50 bg-gradient-to-r from-zinc-900 via-zinc-800 to-zinc-900 text-white shadow-lg py-3 backdrop-blur-md">
+      <nav className="flex items-center justify-between px-4 md:px-8">
+        {/* Combined Logo Icon + Text in one Link */}
+        <Link
+          to="/"
+          className="flex items-center gap-2 font-extrabold text-2xl text-blue-400 tracking-wider hover:scale-105 transition-transform duration-300"
+        >
+          <SiSpyderide size={40} className="text-blue-500" />
+          RideOrDrive
+        </Link>
+
+        {/* Desktop Menu */}
+        <div className="hidden md:flex items-center gap-6 font-medium text-lg">
+          {["/", "/About", "/Car", "/Service"].map((path, i) => {
+            const labels = ["Home", "About Us", "Our Cars", "Services"];
+            return (
+              <Link
+                key={i}
+                to={path}
+                className="hover:text-blue-400 hover:scale-105 transition-all duration-300"
+              >
+                {labels[i]}
+              </Link>
+            );
+          })}
+          <Link to="/SignIn">
+            <button className="bg-blue-600 hover:bg-blue-500 text-white px-5 py-1.5 rounded-full shadow-md hover:shadow-blue-400/40 transition duration-300">
+              Sign In
+            </button>
           </Link>
         </div>
-        <div className="md:hidden flex items-center">
+
+        {/* Mobile Menu Icon */}
+        <div className="md:hidden z-50">
           {menu ? (
-            <AiOutlineClose size={25} onClick={handleChange} />
+            <AiOutlineClose
+              size={25}
+              onClick={handleChange}
+              className="hover:text-blue-400 transition duration-300"
+            />
           ) : (
-            <RiMenuUnfoldFill size={25} onClick={handleChange} />
+            <RiMenuUnfoldFill
+              size={25}
+              onClick={handleChange}
+              className="hover:text-blue-400 transition duration-300"
+            />
           )}
         </div>
       </nav>
-      {/* responsive */}
+
+      {/* Mobile Menu */}
       <div
         className={`${
           menu ? "translate-x-0" : "-translate-x-full"
-        } md:hidden flex flex-col absolute bg-black text-white left-0 top-19 font-semibold text-1.9xl text-center pt-8 pb-4 gap-8 w-3/4 h-fit rounded-br-xl transition-transform duration-300`}
+        } md:hidden fixed top-0 left-0 w-3/4 h-screen bg-zinc-950 bg-opacity-90 backdrop-blur-md flex flex-col pt-24 gap-8 text-center text-xl transition-transform duration-500 ease-in-out shadow-xl`}
       >
         <Link
           to="/"
-          className="hover:text-blue-900 transition duration-200 ease-linear"
+          onClick={handleChange}
+          className="hover:text-blue-400 transition duration-200"
         >
           Home
         </Link>
         <Link
           to="/About"
-          className="hover:text-blue-900 transition duration-200 ease-linear"
+          onClick={handleChange}
+          className="hover:text-blue-400 transition duration-200"
         >
           About Us
         </Link>
         <Link
           to="/Car"
-          className="hover:text-blue-900 transition duration-200 ease-linear"
+          onClick={handleChange}
+          className="hover:text-blue-400 transition duration-200"
         >
           Our Cars
         </Link>
-        {/* <Link
-          to="/Bike"
-          className="hover:text-blue-900 transition duration-200 ease-linear"
-        >
-          Our Bikes
-        </Link> */}
         <Link
           to="/Service"
-          className="hover:text-blue-900 transition duration-200 ease-linear"
+          onClick={handleChange}
+          className="hover:text-blue-400 transition duration-200"
         >
           Services
         </Link>
-
-      <div>
-      <Link to='/SignIN'>
-
-      <button className="hover:text-blue-900 border-2 border-neutral-600 text-cyan-600 rounded-md py-1 px-4">
-          Sign In
-        </button>
-      </Link>
-      </div>
+        <Link to="/SignIn" onClick={handleChange}>
+          <button className="mt-2 border border-blue-400 text-blue-400 rounded-full py-2 px-6 hover:bg-blue-500 hover:text-white transition duration-300">
+            Sign In
+          </button>
+        </Link>
       </div>
     </header>
   );
