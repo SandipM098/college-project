@@ -13,13 +13,13 @@ const Navbar = () => {
 
   return (
     <header className="fixed w-full z-50 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-white shadow-lg py-3 backdrop-blur-md">
-      <nav className="flex items-center justify-between px-4 md:px-8">
+      <nav className="flex items-center justify-between px-4 md:px-8 ml-5">
         {/* Combined Logo Icon + Text in one Link */}
         <Link
           to="/"
-          className="flex items-center gap-2 font-extrabold text-2xl text-indigo-400 tracking-wider hover:scale-105 transition-transform duration-300"
+          className="flex items-center gap-2 font-extrabold text-2xl text-blue-300 tracking-wider hover:scale-105 transition-transform duration-300"
         >
-          <SiSpyderide size={40} className="text-indigo-500" />
+          <SiSpyderide size={40} className="text-blue-500" />
           RideOrDrive
         </Link>
 
@@ -38,7 +38,7 @@ const Navbar = () => {
             );
           })}
           <Link to="/SignIn">
-            <button className="bg-indigo-500 hover:bg-indigo-600 text-white px-6 py-2 rounded-full shadow-md hover:shadow-indigo-400/50 transition-all duration-300">
+            <button className="mt-4 border bg-blue-600 text-white border-blue-600 rounded-full py-2 px-6 hover:bg-indigo-400 hover:text-white transition-all duration-300">
               Sign In
             </button>
           </Link>
@@ -97,7 +97,7 @@ const Navbar = () => {
           Services
         </Link>
         <Link to="/SignIn" onClick={handleChange}>
-          <button className="mt-4 border border-indigo-400 text-indigo-400 rounded-full py-2 px-8 hover:bg-indigo-500 hover:text-white transition-all duration-300">
+          <button className="mt-4 border bg-blue-600 text-white border-blue-600 rounded-full py-2 px-8 hover:bg-indigo-400 hover:text-white transition-all duration-300">
             Sign In
           </button>
         </Link>

@@ -4,8 +4,8 @@ const FeatureCar = ({ id, name, img, price }) => {
   console.log("Image URL:", img);
   return (
     <div
-      className="border-2 border-zinc-900 bg-slate-100 text-black rounded-xl mb-6 mx-3 
-                    cursor-pointer transform hover:scale-105 transition-all duration-500 ease-in-out 
+      className="border-2 bg-slate-100 text-black rounded-xl mb-6 mx-3 
+                    cursor-pointer transform hover:scale-70 transition-all duration-500 ease-in-out 
                     shadow-lg hover:shadow-2xl"
     >
       <div className="overflow-hidden">

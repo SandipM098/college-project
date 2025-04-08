@@ -4,8 +4,8 @@ function CarNewsCard({ img, desc }) {
   return (
     <div className="mx-4 mb-8 group cursor-pointer">
       <div
-        className="relative border-2 border-gray-800 rounded-xl overflow-hidden 
-                      bg-white transform transition-all duration-500 hover:-translate-y-2 
+        className="relative border-2 rounded-xl overflow-hidden 
+                      bg-white transform transition-all duration-500 hover:-translate-y-1 
                       hover:shadow-xl"
       >
         <div className="overflow-hidden">

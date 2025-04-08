@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <div className="bg-black text-white">
       <div className="h-screen flex flex-col justify-center  md:flex-row items-center">
-        <div className="w-full md:w-2/4 space-y-5 mt-10">
+        <div className="w-full md:w-2/4 space-y-5 mt-10 ml-12">
           <h2 className="text-6xl lg:text-6xl font-bold leading-tight">
             Find Your Perfect Travel Assists
           </h2>

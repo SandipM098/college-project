@@ -10,7 +10,7 @@ const CarsCard = ({ id, img, name, price }) => {
         <img
           src={img}
           alt={name}
-          className="w-full h-48 object-cover transition-transform duration-500 hover:scale-110"
+          className="w-full h-48 object-cover transition-transform duration-500 hover:scale-70"
         />
       </div>
       <div className="p-5 space-y-3">
