@@ -12,33 +12,33 @@ const Navbar = () => {
   };
 
   return (
-    <header className="fixed w-full z-50 bg-gradient-to-r from-zinc-900 via-zinc-800 to-zinc-900 text-white shadow-lg py-3 backdrop-blur-md">
+    <header className="fixed w-full z-50 bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-white shadow-lg py-3 backdrop-blur-md">
       <nav className="flex items-center justify-between px-4 md:px-8">
         {/* Combined Logo Icon + Text in one Link */}
         <Link
           to="/"
-          className="flex items-center gap-2 font-extrabold text-2xl text-blue-400 tracking-wider hover:scale-105 transition-transform duration-300"
+          className="flex items-center gap-2 font-extrabold text-2xl text-indigo-400 tracking-wider hover:scale-105 transition-transform duration-300"
         >
-          <SiSpyderide size={40} className="text-blue-500" />
+          <SiSpyderide size={40} className="text-indigo-500" />
           RideOrDrive
         </Link>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex items-center gap-6 font-medium text-lg">
+        <div className="hidden md:flex items-center gap-8 font-medium text-lg">
           {["/", "/About", "/Car", "/Service"].map((path, i) => {
             const labels = ["Home", "About Us", "Our Cars", "Services"];
             return (
               <Link
                 key={i}
                 to={path}
-                className="hover:text-blue-400 hover:scale-105 transition-all duration-300"
+                className="text-gray-300 hover:text-indigo-400 hover:scale-105 transition-all duration-300"
               >
                 {labels[i]}
               </Link>
             );
           })}
           <Link to="/SignIn">
-            <button className="bg-blue-600 hover:bg-blue-500 text-white px-5 py-1.5 rounded-full shadow-md hover:shadow-blue-400/40 transition duration-300">
+            <button className="bg-indigo-500 hover:bg-indigo-600 text-white px-6 py-2 rounded-full shadow-md hover:shadow-indigo-400/50 transition-all duration-300">
               Sign In
             </button>
           </Link>
@@ -50,13 +50,13 @@ const Navbar = () => {
             <AiOutlineClose
               size={25}
               onClick={handleChange}
-              className="hover:text-blue-400 transition duration-300"
+              className="text-gray-300 hover:text-indigo-400 transition duration-300"
             />
           ) : (
             <RiMenuUnfoldFill
               size={25}
               onClick={handleChange}
-              className="hover:text-blue-400 transition duration-300"
+              className="text-gray-300 hover:text-indigo-400 transition duration-300"
             />
           )}
         </div>
@@ -66,38 +66,38 @@ const Navbar = () => {
       <div
         className={`${
           menu ? "translate-x-0" : "-translate-x-full"
-        } md:hidden fixed top-0 left-0 w-3/4 h-screen bg-zinc-950 bg-opacity-90 backdrop-blur-md flex flex-col pt-24 gap-8 text-center text-xl transition-transform duration-500 ease-in-out shadow-xl`}
+        } md:hidden fixed top-0 left-0 w-3/4 h-screen bg-gray-900 bg-opacity-95 backdrop-blur-md flex flex-col pt-24 gap-10 text-center text-xl transition-transform duration-500 ease-in-out shadow-2xl`}
       >
         <Link
           to="/"
           onClick={handleChange}
-          className="hover:text-blue-400 transition duration-200"
+          className="text-gray-300 hover:text-indigo-400 transition duration-300"
         >
           Home
         </Link>
         <Link
           to="/About"
           onClick={handleChange}
-          className="hover:text-blue-400 transition duration-200"
+          className="text-gray-300 hover:text-indigo-400 transition duration-300"
         >
           About Us
         </Link>
         <Link
           to="/Car"
           onClick={handleChange}
-          className="hover:text-blue-400 transition duration-200"
+          className="text-gray-300 hover:text-indigo-400 transition duration-300"
         >
           Our Cars
         </Link>
         <Link
           to="/Service"
           onClick={handleChange}
-          className="hover:text-blue-400 transition duration-200"
+          className="text-gray-300 hover:text-indigo-400 transition duration-300"
         >
           Services
         </Link>
         <Link to="/SignIn" onClick={handleChange}>
-          <button className="mt-2 border border-blue-400 text-blue-400 rounded-full py-2 px-6 hover:bg-blue-500 hover:text-white transition duration-300">
+          <button className="mt-4 border border-indigo-400 text-indigo-400 rounded-full py-2 px-8 hover:bg-indigo-500 hover:text-white transition-all duration-300">
             Sign In
           </button>
         </Link>
