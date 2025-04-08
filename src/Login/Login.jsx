@@ -11,7 +11,6 @@ export default function Login() {
     console.log("Username:", username);
     console.log("Password:", password);
     console.log("Remember Me:", rememberMe);
-    // Add your login logic here (e.g., API call)
   };
 
   return (
