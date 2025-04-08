@@ -12,7 +12,7 @@ const OurCars = () => {
     { id: 0, img: img1, name: "Toyota Agya", price: "25,000" },
     { id: 1, img: img2, name: "Suzuki Swift ZXI", price: "30,000" },
     { id: 2, img: img3, name: "BMW X5", price: "33,000" },
-    { id: 3, img: img4, name: "Mercedes CLS", price: "35,000" }, // Corrected "Mercedez" to "Mercedes"
+    { id: 3, img: img4, name: "Mercedes CLS", price: "35,000" }, 
     { id: 4, img: img5, name: "Ford Mustang Shelby GT 500", price: "38,000" },
     { id: 5, img: img6, name: "Audi R8", price: "40,000" },
   ];
@@ -30,7 +30,7 @@ const OurCars = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4 md:px-8">
         {carsData.map((item) => (
           <CarsCard
-            key={item.id} // Moved key here instead of wrapping div
+            key={item.id} 
             id={item.id}
             img={item.img}
             name={item.name}
