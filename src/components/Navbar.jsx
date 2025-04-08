@@ -31,14 +31,14 @@ const Navbar = () => {
               <Link
                 key={i}
                 to={path}
-                className="text-gray-300 hover:text-indigo-400 hover:scale-105 transition-all duration-300"
+                className="text-gray-300 hover:text-blue-700 hover:scale-105 transition-all duration-300"
               >
                 {labels[i]}
               </Link>
             );
           })}
           <Link to="/SignIn">
-            <button className="mt-4 border bg-blue-600 text-white border-blue-600 rounded-full py-2 px-6 hover:bg-indigo-400 hover:text-white transition-all duration-300">
+            <button className="mt-4 border bg-blue-600 text-white border-blue-600 rounded-full py-2 px-6 hover:bg-blue-700 hover:text-white transition-all duration-300">
               Sign In
             </button>
           </Link>
@@ -50,13 +50,13 @@ const Navbar = () => {
             <AiOutlineClose
               size={25}
               onClick={handleChange}
-              className="text-gray-300 hover:text-indigo-400 transition duration-300"
+              className="text-gray-300 hover:text-blue-700 transition duration-300"
             />
           ) : (
             <RiMenuUnfoldFill
               size={25}
               onClick={handleChange}
-              className="text-gray-300 hover:text-indigo-400 transition duration-300"
+              className="text-gray-300 hover:text-blue-700 transition duration-300"
             />
           )}
         </div>
@@ -71,33 +71,33 @@ const Navbar = () => {
         <Link
           to="/"
           onClick={handleChange}
-          className="text-gray-300 hover:text-indigo-400 transition duration-300"
+          className="text-gray-300 hover:text-blue-700 transition duration-300"
         >
           Home
         </Link>
         <Link
           to="/About"
           onClick={handleChange}
-          className="text-gray-300 hover:text-indigo-400 transition duration-300"
+          className="text-gray-300 hover:text-blue-700 transition duration-300"
         >
           About Us
         </Link>
         <Link
           to="/Car"
           onClick={handleChange}
-          className="text-gray-300 hover:text-indigo-400 transition duration-300"
+          className="text-gray-300 hover:text-blue-700 transition duration-300"
         >
           Our Cars
         </Link>
         <Link
           to="/Service"
           onClick={handleChange}
-          className="text-gray-300 hover:text-indigo-400 transition duration-300"
+          className="text-gray-300 hover:text-blue-700 transition duration-300"
         >
           Services
         </Link>
         <Link to="/SignIn" onClick={handleChange}>
-          <button className="mt-4 border bg-blue-600 text-white border-blue-600 rounded-full py-2 px-8 hover:bg-indigo-400 hover:text-white transition-all duration-300">
+          <button className="mt-4 border bg-blue-600 text-white border-blue-600 rounded-full py-2 px-8 hover:bg-blue-700 hover:text-white transition-all duration-300">
             Sign In
           </button>
         </Link>

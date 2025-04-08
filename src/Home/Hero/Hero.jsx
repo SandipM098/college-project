@@ -18,7 +18,7 @@ export default function Hero() {
             your next adventure covered.
           </p>
           <div className="flex gap-8">
-            <button className="bg-blue-600 py-1 px-4 rounded-md hover:scale-95 transition duration-150 ease-linear">
+            <button className="bg-blue-600 py-1 px-4 rounded-md hover:scale-95 transition duration-150 ease-linear hover:bg-blue-700">
               Explore More
             </button>
             <button className="border-2 border-neutral-600 py-1 px-4 rounded-md hover:bg-blue-600 transition duration-200 ease-linear">
